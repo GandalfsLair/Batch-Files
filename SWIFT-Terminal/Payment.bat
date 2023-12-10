@@ -1,9 +1,8 @@
 @echo off
-:menu
-title SecurePay
+:logo
+title SWIFT Secure - Main Terminal
 color 02
 
-:logo
 cls
 echo.
 echo.
@@ -47,6 +46,8 @@ If %choice% EQU 6 goto :exit
 If %choice% GTR 6 goto :logo
 
 :enter
+title SWIFT Secure - Make a Payment
+color 02
 cls
 echo.
 echo.
@@ -183,6 +184,8 @@ pause
 goto :logo
 
 :cancel
+title SWIFT Secure - Cancel a Payment
+color 02
 cls
 echo.
 echo.
@@ -251,6 +254,8 @@ timeout /t 1 /nobreak >>nul
 goto :logo
 
 :close
+title SWIFT Secure - Close a Payment
+color 02
 cls
 echo.
 echo.
@@ -307,6 +312,8 @@ timeout /t 1 /nobreak >>nul
 goto :logo
 
 :review
+title SWIFT Secure - Review Logs
+color 02
 cls
 echo.
 echo.
@@ -341,6 +348,8 @@ goto :logo
 
 
 :delete
+title SWIFT Secure - Delete Logs
+color 02
 cls
 echo.
 echo.
@@ -372,7 +381,7 @@ timeout /t 1 /nobreak >>nul
 
 :sub1
 cls
-title Delete Logs
+title SWIFT Secure - Secure Delete In Progress!
 color 02
 echo.
 echo.
@@ -584,7 +593,7 @@ goto :logo
 :exit
 timeout /t 2 /nobreak >>nul
 cls
-title Exit
+title SWIFT Secure - System Exit in Progress
 color 02
 echo.
 echo.
@@ -601,6 +610,6 @@ echo  ## ##  ###### ######  ####   ####  #    # ######      #    ####       #   
 echo _______________________________________________________________________________________________________________________________________________________________________________________
 echo.
 echo SYSTEM EXIT ON KEY PRESS
-timeout /t 2 /nobreak >>nul
+timeout /t 1 /nobreak >>nul
 pause
 exit
